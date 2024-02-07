@@ -5,7 +5,7 @@ const useStyles = makeStyles((theme) => ({
 		background: '#09141A'
 	},
 	fontBold: {
-		fontWeight: 'bold'
+		fontWeight: 'bold !important'
 	},
 	boxTitle: {
 		marginBottom: '15px'

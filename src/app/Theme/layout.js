@@ -9,26 +9,12 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Layout({ children }) {
   const router = useRouter();
-  const [backdropLoader, setBackdropLoader] = React.useState(false);
-  const [toastMessage, setToastMessage] = React.useState({
+  const [backdropLoader, setBackdropLoader] = useState(false);
+  const [toastMessage, setToastMessage] = useState({
     open: false,
     variant: '',
     text: '',
   });
-
-  const [isLogin, setIsLogin] = useState()
-
-  useEffect(() => {
-    if (localStorage.getItem('isLogin') !== null) {
-      setIsLogin(localStorage.getItem('isLogin'))
-    }
-    if (localStorage.getItem('isLogin') === null) {
-      router.push('/');
-    }
-    if (router.pathname === "/register") {
-      router.push('/register');
-    }
-  }, []);
 
   const handleCloseMessage = () => {
     setToastMessage({ ...toastMessage, open: false });

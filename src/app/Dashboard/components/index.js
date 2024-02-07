@@ -144,7 +144,7 @@ const Home = (props) => {
                 </div>
                 <div className="grid gap-4 grid-cols-2 mb-2">
                   <p className="font-semibold">Company Name</p>
-                  <p>{user.company_name}</p>
+                  <p>{user.company.name}</p>
                 </div>
                 <div className="grid gap-4 grid-cols-2 mb-2">
                   <p className="font-semibold">Address</p>
@@ -323,7 +323,7 @@ const Home = (props) => {
   return (
     <>
       <main className={classNames(styles.background, 'min-h-screen')}>
-        <div className="p-10">
+        <div className="lg:p-10 md:p-10 p-5">
           <div className="grid gap-4 lg:grid-cols-3 md:grid-cols-3">
             <Card className={classNames(styles.backgroundBox, 'px-4 py-3')}>
               <CardContent>
@@ -499,7 +499,7 @@ const Home = (props) => {
               />
             </Paper>
           </div>
-          <div className="mt-10 grid gap-4 lg:grid-cols-2 md:grid-cols-1">
+          <div className="mt-10 lg:grid lg:gap-4 lg:grid-cols-2 md:grid-cols-1">
             <div>
               <div className="flex items-ccecnter justify-between mb-5">
                 <h2 className="text-2xl font-semibold text-left">
@@ -652,7 +652,7 @@ const Home = (props) => {
                 />
               </Paper>
             </div>
-            <div>
+            <div className="mt-10 lg:mt-0">
               <h2 className="text-2xl font-semibold mb-5 text-left">
                 Order
               </h2>

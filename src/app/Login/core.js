@@ -47,7 +47,7 @@ const Core = (props) => {
   const handleSubmit = async () => {
     try {
         localStorage.setItem('isLogin', true)
-        router.push('/dashboard')
+        window.location.href = '/dashboard'
         window.toastMessage({
           open: true,
           variant: 'success',

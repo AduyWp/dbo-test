@@ -27,7 +27,7 @@ const Home = (props) => {
   return (
     <>
       <main className="min-h-screen flex items-center justify-center">
-        <div className="mb-10 px-8 mt-10 w-1/2 lg:w-1/3 sm:w-1/2 md:w-1/2 relative">
+        <div className="mb-10 px-8 mt-10 w-5/6 lg:w-1/3 sm:w-1/2 md:w-1/2 relative">
           <h2 className="mb-3 text-2xl font-semibold mb-10 text-center">
             Register
           </h2>
